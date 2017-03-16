@@ -1,0 +1,82 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f0f0 !important;
+    font-size: 16px;
+    color: #3e3e3e;
+    // font-family: $bold;
+}
+
+#page-wrapper {
+    padding: 20px;
+    min-height: 100%;
+    background-color: #f8f8f8;
+}
+
+#page-wrapper {
+    position: inherit;
+    margin: 55px 0 0 250px;
+    padding: 0 0;
+    // height: 100%;
+    // border-left: 1px solid #e7e7e7;
+}
+
+.mainbar {
+    display: block;
+    left: 250px;
+    top: 0;
+    position: absolute;
+    width: calc(100% - 250px);
+    min-height: 100%;
+    background: #F5F5F5;
+    .container {
+        max-width: 1300px;
+        padding-top: 85px;
+    }
+}
+
+.eye-ic {
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 75%;
+    background-position: center left;
+    display: inline-block;
+    background-image: url(../../assets/img/views-icon.png);
+}
+
+.share-ic {
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 75%;
+    background-position: center left;
+    display: inline-block;
+    background-image: url(../../assets/img/likes-icon.png);
+}
+
+.draft-ic {
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 75%;
+    background-position: center left;
+    display: inline-block;
+    background-image: url(../../assets/img/draft-icon.png);
+}
+
+.published-ic {
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 75%;
+    background-position: center left;
+    display: inline-block;
+    background-image: url(../../assets/img/check-mark.png);
+}

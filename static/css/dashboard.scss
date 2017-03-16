@@ -1,0 +1,222 @@
+
+@import "main";
+/**************** Dashboard ***************/
+.border-box{
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+}
+.thin{
+    font-family: $thin;
+}
+.letter-spacing{
+    letter-spacing: 1px;
+}
+.trans-btn{
+    background-color: transparent;
+    border-color: transparent;
+}
+.gray-btn{
+    background-color: #f6f6f6;
+    border: 1px solid #e4e4e4;
+    color: #4b4b4b;
+    border-radius: 3px;
+}
+.display-flex{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.dash{
+    $gray:#888;
+    .blue-txt{
+        color:#5d98b4;
+    }
+
+     .border-box{
+       padding: 15px 20px;
+       margin-bottom: 30px;
+       position: relative;
+       p{
+        color: $gray;
+       }    
+       .close-btn{
+        @extend .gray-btn;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 30px;
+       } 
+    }
+
+    .form-select {
+      @extend .border-box;  
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      overflow: hidden;
+      padding: 0;
+      min-width: 90px;
+    }
+
+    .form-select:after {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        z-index: 1;
+        color: #bbbbbb;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .ie .form-select:after {
+      display: none;
+    }
+
+    select {
+      position: relative;
+      background: transparent;
+      background-image: none;
+      display: block;
+      width: 100%;
+      outline: none;
+      color: #888888;
+      cursor: pointer;
+      z-index: 2;
+      border: none;
+      padding: 2px 5px;
+      text-overflow: '';
+      text-indent: 5px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+    }
+    select[multiple=multiple] {
+      height: auto;
+      border: 1px solid $gray;
+      border-radius: 3px;
+    }
+
+    select option[disabled] {
+      color: #eeeeee;
+      text-shadow: none;
+      border: none;
+    }
+
+    select:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #888888;
+    }
+
+    select::-ms-expand {
+      display: none;
+    }
+
+
+    .chart-header{
+        font-size: 14px;
+        .left{
+            li{
+                float: left;
+                margin-right: 15px;
+
+            }
+        }
+        
+    }
+
+    .news-box{
+        .news-header{
+            border-bottom: 1px solid #e4e4e4;
+            padding-bottom: 10px;
+            letter-spacing: 1px;
+            .blue-txt{
+                float: right;
+                font-size: 14px;
+                font-family: $thin;
+            }
+            .h6{
+                float: left;
+                font-size: 16px;
+            }
+        }
+       
+        .news-list{
+            .img-cover{
+                width: 150px;
+                height: 80px;
+            }
+            >li{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                padding: 15px 0;
+                border-bottom: 1px solid #e4e4e4;
+                &:last-child{
+                    border-bottom:none;
+                }
+                p{
+                    color: $gray;
+                    font-family: $thin;
+                }
+                .h6{
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    word-spacing: 3px;
+                    padding-bottom: 10px;
+                }
+            .left{
+                padding-left: 15px;
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                
+             }
+            ul{
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                color: $gray;
+                justify-content: space-between;
+                padding-top:10px;
+                li{
+                    flex-basis: 33%;
+                      font-family: $thin;
+                    }
+                }
+
+            }
+        }
+
+        .user-list{
+            .img-cover{
+                width: 60px;
+                height: 60px;
+            }    
+        }
+    }
+
+    @include viewport(large) {
+        .md-flex-row{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            flex-flow: inherit;
+            justify-content: space-between;
+        }
+        .news-box{
+            flex-basis: 48.8%;
+        }
+    }
+
+
+
+}

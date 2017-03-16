@@ -1,0 +1,71 @@
+.full-width {
+  width: 100%; }
+
+.btn .caret {
+  margin-left: 5px; }
+
+.btn-gray {
+  color: #787878;
+  background-color: #f7f7f7;
+  border: 1px solid #d0d0d0; }
+
+.channels-list .channels-header a {
+  margin-left: 20px;
+  color: #5598b6; }
+.channels-list .channels-header input {
+  min-width: 300px;
+  padding: 4px 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; }
+.channels-list .channels-list-content {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px; }
+  .channels-list .channels-list-content .top-actions {
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; }
+    .channels-list .channels-list-content .top-actions input, .channels-list .channels-list-content .top-actions .dropdown, .channels-list .channels-list-content .top-actions .sortBtn {
+      margin-right: 20px; }
+    .channels-list .channels-list-content .top-actions input {
+      margin-top: 10px; }
+  .channels-list .channels-list-content li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; }
+    .channels-list .channels-list-content li .channel-select {
+      margin: 43px 20px 0 0; }
+    .channels-list .channels-list-content li .channel-img {
+      width: 200px;
+      height: 100px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; }
+    .channels-list .channels-list-content li .channel-action {
+      min-width: 200px;
+      height: 100px;
+      margin-left: 10px; }
+      .channels-list .channels-list-content li .channel-action .channel-name {
+        color: #5598b6;
+        margin-top: 8px; }
+      .channels-list .channels-list-content li .channel-action .channel-count {
+        margin-top: 5px;
+        font-size: 13px; }
+      .channels-list .channels-list-content li .channel-action .dropdown {
+        margin-top: 5px; }
+        .channels-list .channels-list-content li .channel-action .dropdown .edit-btn {
+          padding: 3px 12px; }
+    .channels-list .channels-list-content li .channel-stats {
+      color: rgba(0, 0, 0, 0.4);
+      height: 100px;
+      margin-right: 70px; }
+      .channels-list .channels-list-content li .channel-stats .like, .channels-list .channels-list-content li .channel-stats .user {
+        margin-top: 10px; }
+    .channels-list .channels-list-content li .channel-status {
+      color: rgba(0, 0, 0, 0.4);
+      margin-right: 70px; }
+
+/*# sourceMappingURL=channels-list.css.map */

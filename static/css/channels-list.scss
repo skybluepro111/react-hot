@@ -1,0 +1,91 @@
+.full-width{
+    width: 100%;
+}
+.btn .caret{
+    margin-left: 5px;
+}
+.btn-gray{
+    color: rgb(120,120,120);
+    background-color: rgb(247,247,247);
+    border: 1px solid rgb(208,208,208)
+}
+.channels-list{
+    .channels-header{
+        a{
+            margin-left: 20px;
+            color:rgb(85,152,182);
+        }
+        input{
+            min-width: 300px;
+            padding: 4px 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    }
+    .channels-list-content{
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        .top-actions{
+            display: inline-block;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            input,.dropdown,.sortBtn{
+                margin-right: 20px;
+            }
+            input{
+                margin-top: 10px;
+            }
+        }
+        li{
+            float: left;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            .channel-select{
+                margin: 43px 20px 0 0;
+            }
+            .channel-img{
+                width: 200px;
+                height: 100px;
+                // background: red;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .channel-action{
+                min-width: 200px;
+                height: 100px;
+                margin-left: 10px;
+                .channel-name{
+                    color: rgb(85,152,182);
+                    margin-top: 8px;
+                }
+                .channel-count{
+                    margin-top: 5px;
+                    font-size: 13px;
+                }
+                .dropdown{
+                    margin-top: 5px;
+                    .edit-btn{
+                        padding: 3px 12px;
+                    }
+                }
+            }
+            .channel-stats{
+                color:rgba(0,0,0,.4);
+                height: 100px;
+                margin-right: 70px;
+                .like,.user{
+                    margin-top: 10px;
+                }
+            }
+            .channel-status{
+                color:rgba(0,0,0,.4);
+                margin-right: 70px;
+            }
+        }
+    }
+}

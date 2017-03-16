@@ -1,0 +1,183 @@
+@import "admin";
+//////general////
+$light-border-gray: #c1c1c1;
+$light-green: #f0f0f0;
+.gray{
+    color: #787878;
+}
+.light-blue{
+    color: #5093b1;
+}
+.container{
+    background: $light-green;
+}
+.display-inline{
+    display: inline-block;
+}
+.display-block{
+    display: block;
+}
+.full-width{
+    width: 100%;
+}
+.btn-gray{
+    color: rgb(120,120,120);
+    background-color: rgb(247,247,247);
+    border: 1px solid rgb(208,208,208)
+}
+
+.channels{
+    padding: 20px 25px;
+
+    .padding-channels{
+        padding: 6px 15px;
+    }
+    .img-channels{
+        background-image: url('../img/sea.png');
+        margin: 15px;
+        height: 15rem;
+    }
+    .img-absolute{
+        @include position-scale(absolute, 80px, auto, auto, 40%);
+        width: 12rem;
+        height: 11rem;
+        border-radius: 100%;
+    }
+    .width-255{
+        width: 255px;
+    }
+    table{
+        width: 100%;
+        .checkbox{
+            margin-left: 30px;
+        }
+    }
+    .caret-channels{
+        margin-left: 17px;
+        border-top: 9px solid;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        &.caret-channels-date{
+            margin-left: 55px;
+        }
+    }
+    .channels-list{
+        .channels-header{
+            a{
+                margin-left: 20px;
+                color:rgb(85,152,182);
+            }
+            input{
+                min-width: 300px;
+                padding: 4px 5px;
+                margin-right: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+        .channels-list-content{
+            .top-actions{
+                display: inline-block;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ccc;
+                input,.dropdown,.sortBtn{
+                    margin-right: 20px;
+                }
+                input{
+                    margin-top: 10px;
+                }
+            }
+            li{
+                float: left;
+                width: 100%;
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+                .channel-select{
+                    margin: 43px 20px 0 0;
+                }
+                .channel-img{
+                    width: 200px;
+                    height: 100px;
+                    // background: red;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+                .channel-action{
+                    min-width: 200px;
+                    height: 100px;
+                    margin-left: 20px;
+                    .channel-name{
+                        color: rgb(85,152,182);
+                        margin-top: 8px;
+                    }
+                    .channel-count{
+                        margin-top: 5px;
+                        font-size: 13px;
+                    }
+                    .dropdown{
+                        margin-top: 5px;
+                        .edit-btn{
+                            padding: 3px 12px;
+                        }
+                    }
+                }
+                .channel-stats{
+                    color:rgba(0,0,0,.4);
+                    height: 100px;
+                    margin-right: 70px;
+                    .like,.user{
+                        margin-top: 10px;
+                    }
+                }
+                .channel-status{
+                    color:rgba(0,0,0,.4);
+                    margin-right: 70px;
+                }
+            }
+        }
+    }
+
+}
+.white-btn {
+    padding: 8px 18px;
+    background-color: #fff;
+    color: #5093b1;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid $light-border-gray;
+
+    &.white-btn-color-black{
+        color: #000;
+    }
+    &:hover {
+        background-color: $light-green;
+    }
+}
+.background-white{
+    padding: 20px 10px;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 3px;
+    border: 1px solid $light-border-gray;
+}
+
+.border-gray{
+    padding-bottom: 8px;
+    margin-top: 15px;
+    border: 1px solid $light-border-gray;
+}
+.img-size-table{
+    padding: 10px;
+    height: 100px;
+    width: 150px;
+}
+.border-top-gray{
+    border-top: 1px solid $light-border-gray;
+}
+.img-success{
+    padding: 2px;
+}
+.margin-left-special{
+    margin-left: -10px;
+}
